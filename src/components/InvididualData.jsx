@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import '../styles/IndividualData.scss';
 
 function InvididualData({ imageUrl, name, professionalHeadline }) {
   return (
