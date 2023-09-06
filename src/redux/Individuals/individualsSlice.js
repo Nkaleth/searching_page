@@ -18,7 +18,18 @@ const individualsSlice = createSlice({
     status: 'idle',
     error: null,
   },
-  reducers: {},
+  reducers: {
+    toggleFavorite(state, action) {
+      const index = state.individualsFavorites.findIndex(
+        (favorite) => favorite.ardaId === action.payload.ardaId,
+      );
+      if (index >= 0) {
+        state.individualsFavorites.splice(index, 1);
+      } else {
+        state.individualsFavorites.push(action.payload);
+      }
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(searchIndividuals.pending, (state) => {
