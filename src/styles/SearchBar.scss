@@ -11,5 +11,9 @@
     color: white;
     max-height: 500px;
     overflow-y: auto;
+
+    a {
+      all: unset;
+    }
   }
 }

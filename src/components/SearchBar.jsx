@@ -20,12 +20,13 @@ function SearchBar() {
       <input className="search__input" type="text" value={query} onChange={handleSearch} placeholder="Search people by name" />
       <section className="search__data">
         { individualsList.map((user) => (
-          <InvididualData
-            key={user.ardaId}
-            imageUrl={user.imageUrl}
-            name={user.name}
-            professionalHeadline={user.professionalHeadline}
-          />
+          <a key={user.ardaId} href={`https://torre.ai/${user.username}`}>
+            <InvididualData
+              imageUrl={user.imageUrl}
+              name={user.name}
+              professionalHeadline={user.professionalHeadline}
+            />
+          </a>
         ))}
       </section>
     </div>
