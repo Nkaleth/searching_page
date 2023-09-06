@@ -1,11 +1,10 @@
+import SearchBar from './components/SearchBar'
 import './App.scss'
 
 function App() {
   return (
-    <>
-      <div>HELLO VITE</div>
-    </>
-  )
+    <SearchBar />
+    )
 }
 
 export default App
