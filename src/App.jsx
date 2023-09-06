@@ -1,10 +1,10 @@
-import SearchBar from './components/SearchBar'
-import './App.scss'
+import SearchBar from './components/SearchBar';
+import './App.scss';
 
 function App() {
   return (
     <SearchBar />
-    )
+  );
 }
 
-export default App
+export default App;
