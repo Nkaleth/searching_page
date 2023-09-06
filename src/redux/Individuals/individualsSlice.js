@@ -5,7 +5,7 @@ const individualsSlice = createSlice({
   name: 'individuals',
   initialState: {
     individualsList: individuals,
-    individualsFiltered: [],
+    individualsFavorites: [],
     isLoading: true,
   },
 });
