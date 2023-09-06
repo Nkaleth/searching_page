@@ -1,6 +1,11 @@
+import '../styles/SearchBar.scss';
+
 function SearchBar() {
   return (
-    <div>SearchBar HERE!</div>
+    <div className="search">
+      <input className="search__input" type="text" placeholder="Search people by name" />
+
+    </div>
   );
 }
 
