@@ -5,8 +5,8 @@ function Navbar() {
   return (
     <nav className="Navbar">
       <ul>
-        <li><NavLink to="/" exact>Search by Name</NavLink></li>
-        <li><NavLink to="favorites">Favorites</NavLink></li>
+        <li><NavLink to="/" exact>SEARCH BY NAME</NavLink></li>
+        <li><NavLink to="favorites">FAVORITES</NavLink></li>
       </ul>
     </nav>
   );
