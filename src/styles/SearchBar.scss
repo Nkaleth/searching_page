@@ -6,6 +6,9 @@
   justify-content: center;
 
   &__box {
+    position: fixed;
+    top: 30%;
+    transform: translateY(-50%);
     width: 40%;
     height: 20px;
     display: flex;
@@ -34,6 +37,10 @@
   }
 
   &__data {
+    position: fixed;
+    top: calc(30% + 30px);
+    width: calc(50% + 44px);
+    max-height: calc(50vh - 50px);
     display: flex;
     flex-direction: column;
     align-items: center;
