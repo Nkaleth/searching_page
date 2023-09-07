@@ -46,4 +46,6 @@ const individualsSlice = createSlice({
   },
 });
 
+export const { toggleFavorite } = individualsSlice.actions;
+
 export default individualsSlice.reducer;
