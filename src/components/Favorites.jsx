@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import '../styles/Favorites.scss';
+import defaultAvatar from '../assets/img/default_avatar_svgrepo.svg';
 
 function Favorites() {
   const { individualsFavorites } = useSelector((store) => store.individuals);
@@ -12,7 +13,7 @@ function Favorites() {
           <article key={user.ardaId} className="favorites__dataUser">
             <a href={`https://torre.ai/${user.username}`}>
               <div className="favorites__img">
-                <img src={user.imageUrl} alt={user.name} />
+                <img src={user.imageUrl || defaultAvatar} alt={user.name} />
               </div>
               <div className="favorites__info">
                 <p className="favorites__infoName">{user.name}</p>
