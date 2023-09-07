@@ -5,7 +5,7 @@ import { IconButton } from '@mui/material';
 import { StarRate, StarBorder } from '@mui/icons-material';
 import { toggleFavorite } from '../redux/Individuals/individualsSlice';
 
-function InvididualData({ user }) {
+function IndividualData({ user }) {
   const dispatch = useDispatch();
   const { individualsFavorites } = useSelector((store) => store.individuals);
   return (
@@ -36,7 +36,7 @@ function InvididualData({ user }) {
   );
 }
 
-InvididualData.propTypes = {
+IndividualData.propTypes = {
   user: PropTypes.shape({
     imageUrl: PropTypes.string,
     name: PropTypes.string.isRequired,
@@ -46,4 +46,4 @@ InvididualData.propTypes = {
   }).isRequired,
 };
 
-export default InvididualData;
+export default IndividualData;

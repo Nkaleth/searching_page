@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../styles/SearchBar.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import { PersonSearch } from '@mui/icons-material';
-import InvididualData from './InvididualData';
+import IndividualData from './IndividualData';
 import { searchIndividuals } from '../redux/Individuals/individualsSlice';
 
 function SearchBar() {
@@ -26,7 +26,7 @@ function SearchBar() {
         { individualsList.map((user) => (
           <article key={user.ardaId} className="search__dataUser">
             <a href={`https://torre.ai/${user.username}`}>
-              <InvididualData user={user} />
+              <IndividualData user={user} />
             </a>
           </article>
         ))}
