@@ -5,6 +5,34 @@
   align-items: center;
   justify-content: center;
 
+  &__box {
+    width: 40%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #a8d138;
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin-bottom: 1px;
+
+    &Input[type="text"] {
+      background: transparent;
+      color: white;
+      width: 80%;
+      border: none;
+      margin-left: 0.5rem;
+    }
+
+    input[type="text"]::placeholder {
+      color: grey;
+      font-size: medium;
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+    }
+  }
+
   &__data {
     display: flex;
     flex-direction: column;

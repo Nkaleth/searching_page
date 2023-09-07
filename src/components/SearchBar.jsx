@@ -20,7 +20,7 @@ function SearchBar() {
     <div className="search">
       <section className="search__box">
         <PersonSearch style={{ color: '#fff' }} />
-        <input className="search__input" type="text" value={query} onChange={handleSearch} placeholder="Search people by name" />
+        <input className="search__boxInput" type="text" value={query} onChange={handleSearch} placeholder="Search people by name" />
       </section>
       <section className="search__data">
         { individualsList.map((user) => (
