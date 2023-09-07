@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import '../styles/SearchBar.scss';
 import { useSelector, useDispatch } from 'react-redux';
-import { PersonSearch, StarRate, StarBorder } from '@mui/icons-material';
-import { IconButton } from '@mui/material';
+import { PersonSearch } from '@mui/icons-material';
 import InvididualData from './InvididualData';
-import { searchIndividuals, toggleFavorite } from '../redux/Individuals/individualsSlice';
+import { searchIndividuals } from '../redux/Individuals/individualsSlice';
 
 function SearchBar() {
   const [query, setQuery] = useState('');
@@ -16,7 +15,7 @@ function SearchBar() {
     dispatch(searchIndividuals(newQuery));
   };
 
-  const { individualsList, individualsFavorites } = useSelector((store) => store.individuals);
+  const { individualsList } = useSelector((store) => store.individuals);
   return (
     <div className="search">
       <section className="search__box">
@@ -27,21 +26,8 @@ function SearchBar() {
         { individualsList.map((user) => (
           <article key={user.ardaId} className="search__dataUser">
             <a href={`https://torre.ai/${user.username}`}>
-              <InvididualData
-                imageUrl={user.imageUrl}
-                name={user.name}
-                professionalHeadline={user.professionalHeadline}
-              />
+              <InvididualData user={user} />
             </a>
-            <div className="search__dataFavorite">
-              <IconButton onClick={() => dispatch(toggleFavorite(user))}>
-                {individualsFavorites.some((favorite) => favorite.ardaId === user.ardaId) ? (
-                  <StarRate style={{ color: '#fff' }} />
-                ) : (
-                  <StarBorder style={{ color: '#fff' }} />
-                )}
-              </IconButton>
-            </div>
           </article>
         ))}
       </section>

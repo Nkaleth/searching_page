@@ -1,5 +1,5 @@
 .user {
-  width: 40vw;
+  width: 50vw;
   height: auto;
   background-color: #383b40;
   display: flex;
@@ -31,6 +31,9 @@
 
     p {
       font-size: small;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       height: 10px;
       margin: 0.4rem;
     }
@@ -41,6 +44,16 @@
 
     &Headline {
       color: #c4c4d0;
+    }
+  }
+
+  &__favorite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    button {
+      margin: 10px;
     }
   }
 }
