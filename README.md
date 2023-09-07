@@ -43,7 +43,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- ****
+- **Show up to 10 results**
+- **User is redirected to the  genome of the indivual clicked that appear on search**
+- **Icon Button (Star) to favorite a individual and pass to favorite's section**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
