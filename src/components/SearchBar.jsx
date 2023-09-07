@@ -25,22 +25,24 @@ function SearchBar() {
       </section>
       <section className="search__data">
         { individualsList.map((user) => (
-          <>
-            <a key={user.ardaId} href={`https://torre.ai/${user.username}`}>
+          <article key={user.ardaId} className="search__dataUser">
+            <a href={`https://torre.ai/${user.username}`}>
               <InvididualData
                 imageUrl={user.imageUrl}
                 name={user.name}
                 professionalHeadline={user.professionalHeadline}
               />
             </a>
-            <IconButton onClick={() => dispatch(toggleFavorite(user))}>
-              {individualsFavorites.some((favorite) => favorite.ardaId === user.ardaId) ? (
-                <StarRate style={{ color: '#fff' }} />
-              ) : (
-                <StarBorder style={{ color: '#fff' }} />
-              )}
-            </IconButton>
-          </>
+            <div className="search__dataFavorite">
+              <IconButton onClick={() => dispatch(toggleFavorite(user))}>
+                {individualsFavorites.some((favorite) => favorite.ardaId === user.ardaId) ? (
+                  <StarRate style={{ color: '#fff' }} />
+                ) : (
+                  <StarBorder style={{ color: '#fff' }} />
+                )}
+              </IconButton>
+            </div>
+          </article>
         ))}
       </section>
     </div>
