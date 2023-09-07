@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import '../styles/IndividualData.scss';
 import { IconButton } from '@mui/material';
 import { StarRate, StarBorder } from '@mui/icons-material';
+import defaultAvatar from '../assets/img/default_avatar_svgrepo.svg';
 import { toggleFavorite } from '../redux/Individuals/individualsSlice';
 
 function IndividualData({ user }) {
@@ -11,7 +12,7 @@ function IndividualData({ user }) {
   return (
     <div className="user">
       <div className="user__img">
-        <img src={user.imageUrl} alt={user.name} />
+        <img src={user.imageUrl || defaultAvatar} alt={user.name} />
       </div>
       <div className="user__info">
         <p className="user__infoName">{user.name}</p>
