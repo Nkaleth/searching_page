@@ -98,7 +98,7 @@ npm run dev
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
-
+- [ ] **Implement Mobile version**
 - [ ] **Data preservation.**
 - [ ] **Improve styling with animations and transitions.**
 - [ ] **Feature to allow users unfavorite users from Favorites page.**
