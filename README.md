@@ -44,8 +44,8 @@
 ### Key Features <a name="key-features"></a>
 
 - **Show up to 10 results**
-- **User is redirected to the  genome of the indivual clicked that appear on search**
-- **Icon Button (Star) to favorite a individual and pass to favorite's section**
+- **User is redirected to the  genome of the individual clicked that appears on search**
+- **Icon Button (Star) to favorite an individual and pass to favorite's section**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,8 +101,8 @@ npm run dev
 - [ ] **Implement Mobile version**
 - [ ] **Data preservation.**
 - [ ] **Improve styling with animations and transitions.**
-- [ ] **Feature to allow users unfavorite users from Favorites page.**
-- [ ] **When click on search bar display a list of 10 most recen search queries**
+- [ ] **Feature to allow users unfavorite users from the Favorites page.**
+- [ ] **When clicking on the search bar display a list of the 10 most recent search queries**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
